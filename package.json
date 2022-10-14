@@ -1,5 +1,5 @@
 {
-  "name": "logan-sorting-algorithms-js",
+  "name": "logan-sorting-algorithms",
   "version": "1.0.0",
   "description": "Examples of Various Sorting Algorithms with Drawn Out Explinations",
   "main": "index.js",
@@ -11,11 +11,19 @@
     "Selection",
     "Merge",
     "Example",
-    "Explination",
+    "Explanation",
     "Javascript",
     "Array",
     "Number"
   ],
   "author": "Logan Carpenter",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logan-0/Logan-Sorting-Algorithms-Js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Logan-0/Logan-Sorting-Algorithms-Js/issues"
+  },
+  "homepage": "https://github.com/Logan-0/Logan-Sorting-Algorithms-Js#readme"
 }

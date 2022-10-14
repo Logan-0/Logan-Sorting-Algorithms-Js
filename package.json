@@ -1,0 +1,21 @@
+{
+  "name": "logan-sorting-algorithms-js",
+  "version": "1.0.0",
+  "description": "Examples of Various Sorting Algorithms with Drawn Out Explinations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Bubble",
+    "Selection",
+    "Merge",
+    "Example",
+    "Explination",
+    "Javascript",
+    "Array",
+    "Number"
+  ],
+  "author": "Logan Carpenter",
+  "license": "ISC"
+}

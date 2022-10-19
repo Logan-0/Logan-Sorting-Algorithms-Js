@@ -1,49 +1,45 @@
-The logan-sorting-alogrithms-js Package contains methods for sorting number arrays using (Bubble, Selection, Merge).
+# The logan-sorting-alogrithms-js Package contains methods for sorting number arrays using (Bubble, Selection, Merge).
 
-But Not Just Sorting. This Package is a fully explained sorting method.
+### But Not Just Sorting. This Package is a fully explained sorting method.
 
-This is useful for teaching and/or remembering how each method works.
+### This is useful for teaching and/or remembering how each method works.
 
-As programmers or soon-to-be, we are often asked do you know sorting algorithms.
+### It does sort your specific number array, but also provides examples of both code, and concept.
 
-Well, I made this to say yes, we do, and if you don't, you do now.
+### Let's get started.
 
-It does sort your specific number array, but also provides examples of both code, and concept.
+#### 1. bubbleSortExample(ArrayToBeSorted)
+- Takes one argument, your number array, sorts it, slowly
+- Bubble Sort is never recommended, but very easy to implement
+- Legend has it network television used this for sorting programming. Think of it as that level of speed.
+- Numbers Bubble Up. Largest numbers slowly migrate up the array indices.
 
-Let's get started.
+#### 2. selectionSortExample(ArrayToBeSorted)
+- Takes one argument, your number array, sorts it.
+- Selection Sort is in place so even if it isn't the fastest for something large, it has simple space requirements.
+- Recommended for general use by myself, idk maybe someone better than I recommends it too.
+- For if you don't want to remember Quick Sort
+- Almost an inverse of Bubble Sort it uses the minimum values to sort.
 
-1. bubbleSortExample(ArrayToBeSorted)
--> Takes one argument, your number array, sorts it, slowly
--> Bubble Sort is never recommended, but very easy to implement
--> Legend has it network television used this for sorting programming. Think of it as that level of speed.
--> Numbers Bubble Up. Largest numbers slowly migrate up the array indices.
+#### 3. mergeSort(ArrayToBeSorted)
+- Takes one argument, yournumber array, sorts it, at decent speed.
+- This is used commonplace when data is large enough loading data is an issue.
+- This sort tends to be used externally, i.e. not-in-place
+- We follow the divide and conquer principle.
+- Sorting is easier one at a time, from the ground up.
+- Small arrays may be slower than necessary
 
-2. selectionSortExample(ArrayToBeSorted)
--> Takes one argument, your number array, sorts it.
--> Selection Sort is in place so even if it isn't the fastest for something large, it has simple space requirements.
--> Recommended for general use by myself, idk maybe someone better than I recommends it too.
--> For if you don't want to remember Quick Sort
--> Almost an inverse of Bubble Sort it uses the minimum values to sort.
+### Outputs...
 
-3. mergeSort(ArrayToBeSorted)
--> Takes one argument, yournumber array, sorts it, at decent speed.
--> This is used commonplace when data is large enough loading data is an issue.
--> This sort tends to be used externally, i.e. not-in-place
--> We follow the divide and conquer principle.
--> Sorting is easier one at a time, from the ground up.
--> Small arrays may be slower than necessary
-
-Outputs...
-
-This is a lot going through your terminal. Stretch it like a 8.5x11 word doc and enjoy.
+#### This is a lot going through your terminal. Stretch it like a 8.5x11 word doc and enjoy.
 
 // Used for all sorting methods to show implementation.
-const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)
+`const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)`
 
 
 
 // Output Bubble Sort
-
+```
 Array Sorting Step-by-Step with Bubble
 
 Example Array Original:  [46,75,92,8,11,0,64,79,17,50] 
@@ -136,11 +132,11 @@ Element Position: 7, Element Value: 75
 Element Position: 8, Element Value: 79 
 
 Element Position: 9, Element Value: 92 
-
+```
 
 
 // Output Selection Sort
-
+```
 Array Sorting Step-by-Step with Selection Sort
 
 Example Array Original:  [46,75,92,8,11,0,64,79,17,50] 
@@ -197,12 +193,12 @@ Element Position: 7, Element Value: 75
 Element Position: 8, Element Value: 79 
 
 Element Position: 9, Element Value: 92
-
+```
 
 
 
 // Output Merge Sort
-
+```
 Array Sorting Step-by-Step with Merge Sort
 
 Example Array Original:  [46,75,92,8,11,0,64,79,17,50] 
@@ -381,3 +377,4 @@ Element Position: 7, Element Value: 75
 Element Position: 8, Element Value: 79 
 
 Element Position: 9, Element Value: 92 
+```

@@ -92,7 +92,7 @@ function combine(ArrayToBeSorted, left, right) {
  */
 function prettyPrintingArray(ArrayToBePrinted) {
 
-    for (let i = 0; i < ArrayToBePrinted.length - 1; i++) {
+    for (let i = 0; i < ArrayToBePrinted.length; i++) {
 
         console.log("Element Position: " + i + ", Element Value: " + ArrayToBePrinted[i], "\n");
 

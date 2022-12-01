@@ -26,65 +26,6 @@ function swap(ArrayNeedingElementsSwapped, firstPosition, secondPosition) {
 }
 
 /**
- * Just to avoid confusion is code creation Merge, and MergeSort,
- * Are moved out of the example to improve readability
- */
-function merge(ArrayToBeSorted, left, middle, right) {
-    var n1 = middle - left + 1;
-    var n2 = right - middle;
-
-    var L = new Array(n1);
-    var R = new Array(n2);
-
-    for (var i = 0; i < n1; i++)
-        L[i] = ArrayToBeSorted[left + i];
-    for (var j = 0; j < n2; j++)
-        R[j] = ArrayToBeSorted[middle + 1 + j];
-
-    var i = 0;
-    var j = 0;
-    var k = left;
-
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            ArrayToBeSorted[k] = L[i];
-            i++;
-        }
-        else {
-            ArrayToBeSorted[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-
-    while (i < n1) {
-        ArrayToBeSorted[k] = L[i];
-        i++;
-        k++;
-    }
-
-    while (j < n2) {
-        ArrayToBeSorted[k] = R[j];
-        j++;
-        k++;
-    }
-
-    return ArrayToBeSorted
-}
-
-function combine(ArrayToBeSorted, left, right) {
-    if (left >= right) {
-        return;//returns recursively
-    }
-    var middle = left + parseInt((right - left) / 2);
-    combine(ArrayToBeSorted, left, middle);
-    combine(ArrayToBeSorted, middle + 1, right);
-    merge(ArrayToBeSorted, left, middle, right);
-    return ArrayToBeSorted
-}
-
-
-/**
  * A Function To Print the Array with Purpose
  * 
  * Exaggerated Purpose
@@ -184,9 +125,6 @@ function bubbleSort(ArrayToBeSorted) {
 
 
     for (let i = 0; i < ArrayToBeSorted.length; i++) {
-
-        console.log(i);
-
         for (let j = 0; j < ArrayToBeSorted.length - i - 1; j++) {
             if (ArrayToBeSorted[j] > ArrayToBeSorted[j + 1]) {
                 swap(ArrayToBeSorted, j, j + 1)
@@ -260,7 +198,64 @@ function selectionSort(ArrayToBeSorted) {
 
 }
 
+/**
+ * Just to avoid confusion is code creation Merge, and MergeSort,
+ * Are moved out of the example to improve readability
+ */
+function merge(ArrayToBeSorted, left, middle, right) {
+    var n1 = middle - left + 1;
+    var n2 = right - middle;
 
+    var L = new Array(n1);
+    var R = new Array(n2);
+
+    for (var i = 0; i < n1; i++)
+        L[i] = ArrayToBeSorted[left + i];
+    for (var j = 0; j < n2; j++)
+        R[j] = ArrayToBeSorted[middle + 1 + j];
+
+    var i = 0;
+    var j = 0;
+    var k = left;
+
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            ArrayToBeSorted[k] = L[i];
+            i++;
+        }
+        else {
+            ArrayToBeSorted[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < n1) {
+        ArrayToBeSorted[k] = L[i];
+        i++;
+        k++;
+    }
+
+    while (j < n2) {
+        ArrayToBeSorted[k] = R[j];
+        j++;
+        k++;
+    }
+
+    return ArrayToBeSorted
+}
+
+// Combining the broken down arrays for MergeSort
+function combine(ArrayToBeSorted, left, right) {
+    if (left >= right) {
+        return;//returns recursively
+    }
+    var middle = left + parseInt((right - left) / 2);
+    combine(ArrayToBeSorted, left, middle);
+    combine(ArrayToBeSorted, middle + 1, right);
+    merge(ArrayToBeSorted, left, middle, right);
+    return ArrayToBeSorted
+}
 
 function mergeSort(ArrayToBeSorted) {
 

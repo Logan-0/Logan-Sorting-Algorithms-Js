@@ -243,7 +243,7 @@ function merge(ArrayToBeSorted, left, middle, right) {
 }
 
 // Combining the broken down arrays for MergeSort
-function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
+function mergeSort(ArrayToBeSorted, left, right) {
 
     if (left >= right) {
         return;//returns recursively

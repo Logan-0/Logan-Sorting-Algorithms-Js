@@ -253,8 +253,6 @@ function mergeSort(ArrayToBeSorted, left, right) {
     mergeSort(ArrayToBeSorted, middle + 1, right);
     merge(ArrayToBeSorted, left, middle, right);
 
-
-    prettyPrintingArray(ArrayToBeSorted)
 }
 
 

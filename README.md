@@ -18,7 +18,7 @@
 // Used for all sorting methods to show implementation.
 `const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)`
 
-
+### Process
 
 Array Sorting Step-by-Step with Bubble
 
@@ -73,7 +73,7 @@ Example Array `[46,75,`"92 Started Here`[",8,"]",11,0,64,79,17,50,"[",92,"]]` an
 
 Bubble Sort then Starts over and repeats this process until done.
 
-// Output Bubble Sort
+### Output Bubble Sort
 ```
 Bubble Sort Code (Swap Included in Package):
 
@@ -114,7 +114,7 @@ Element Position: 8, Element Value: 79
 Element Position: 9, Element Value: 92 
 ```
 
-
+### Process
 
 Array Sorting Step-by-Step with Selection Sort
 
@@ -132,7 +132,7 @@ Selection sort then repeatedly scans over and over until left to right we have s
 
 This sorting method is quick in many situations
 
-// Output Selection Sort
+### Output Selection Sort
 ```
 
 Selection Sort Code (Swap Included in Package):

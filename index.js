@@ -68,6 +68,8 @@ function merge(ArrayToBeSorted, left, middle, right) {
         j++;
         k++;
     }
+
+    return ArrayToBeSorted
 }
 
 function combine(ArrayToBeSorted, left, right) {

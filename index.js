@@ -152,7 +152,7 @@ function selectionSort(ArrayToBeSorted) {
     console.log("Selection Sort next finds the minimum value in the array. 0\n")
     console.log("This value goes into the first position. 46, and 0 are Swapped.\n\n")
 
-    console.log("Selection sort repeatedly scans until left to right we have smallest to largest.\n\n")
+    console.log("Selection sort repeatedly scans until left to right we have smallest to largest.\n")
     console.log("This sorting method is often quick\n")
 
 
@@ -197,64 +197,5 @@ function selectionSort(ArrayToBeSorted) {
 
 }
 
-/**
- * Just to avoid confusion is code creation Merge, and MergeSort,
- * Are moved out of the example to improve readability
- */
-function merge(ArrayToBeSorted, left, middle, right) {
-    var n1 = middle - left + 1;
-    var n2 = right - middle;
 
-    var L = new Array(n1);
-    var R = new Array(n2);
-
-    for (var i = 0; i < n1; i++)
-        L[i] = ArrayToBeSorted[left + i];
-    for (var j = 0; j < n2; j++)
-        R[j] = ArrayToBeSorted[middle + 1 + j];
-
-    var i = 0;
-    var j = 0;
-    var k = left;
-
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            ArrayToBeSorted[k] = L[i];
-            i++;
-        }
-        else {
-            ArrayToBeSorted[k] = R[j];
-            j++;
-        }
-        k++;
-    }
-
-    while (i < n1) {
-        ArrayToBeSorted[k] = L[i];
-        i++;
-        k++;
-    }
-
-    while (j < n2) {
-        ArrayToBeSorted[k] = R[j];
-        j++;
-        k++;
-    }
-}
-
-// Combining the broken down arrays for MergeSort
-function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
-
-    if (left >= right) {
-        return;//returns recursively
-    }
-    var middle = left + parseInt((right - left) / 2);
-    mergeSort(ArrayToBeSorted, left, middle);
-    mergeSort(ArrayToBeSorted, middle + 1, right);
-    merge(ArrayToBeSorted, left, middle, right);
-
-}
-
-
-
-module.exports = { prettyPrintingArray, swap, bubbleSort, selectionSort, mergeSort, merge }
+module.exports = { prettyPrintingArray, swap, bubbleSort, selectionSort }

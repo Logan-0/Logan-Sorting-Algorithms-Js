@@ -240,8 +240,6 @@ function merge(ArrayToBeSorted, left, middle, right) {
         j++;
         k++;
     }
-
-    return ArrayToBeSorted
 }
 
 // Combining the broken down arrays for MergeSort

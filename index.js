@@ -196,8 +196,6 @@ function bubbleSort(ArrayToBeSorted) {
     console.log("Your sorted array by position using bubble sort:\n")
     console.log(prettyPrintingArray(ArrayToBeSorted))
 
-
-    return ArrayToBeSorted;
 }
 
 
@@ -256,9 +254,6 @@ function selectionSort(ArrayToBeSorted) {
     console.log("\n")
     console.log("Your sorted array by position using selection sort:\n")
     console.log(prettyPrintingArray(ArrayToBeSorted))
-
-
-    return ArrayToBeSorted;
 
 }
 
@@ -381,8 +376,6 @@ function mergeSort(ArrayToBeSorted) {
     console.log("Your sorted array by position using merge sort:\n")
     mergeSort(ArrayToBeSorted, 0, ArrayToBeSorted.length - 1);
     console.log(prettyPrintingArray(ArrayToBeSorted))
-
-    return ArrayToBeSorted;
 
 }
 

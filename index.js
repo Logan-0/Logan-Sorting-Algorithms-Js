@@ -107,7 +107,6 @@ function bubbleSort(ArrayToBeSorted) {
     console.log("Example Array", JSON.stringify([46, 75, "92 Started Here[", 8, "]", 11, 0, 64, 79, 17, 50, "[", 92, "] and makes it to the end",]), "\n\n")
 
     console.log("Bubble Sort then repeats this process until done.")
-    console.log("This is slow.\n\n")
 
     console.log("Bubble Sort Code (Swap Included in Package):\n")
     console.log("function bubblesort(ArrayToBeSorted) {")

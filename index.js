@@ -374,4 +374,4 @@ function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
 
 
 
-module.exports = { prettyPrintingArray, swap, bubbleSort, selectionSort, mergeSort, merge, combine }
+module.exports = { prettyPrintingArray, swap, bubbleSort, selectionSort, mergeSort, merge }

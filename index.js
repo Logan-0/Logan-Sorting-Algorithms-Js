@@ -90,23 +90,23 @@ function bubbleSort(ArrayToBeSorted) {
     console.log("Example Array", JSON.stringify([46, 75, 8, 11, 0, "[", 64, 92, "]", 79, 17, 50]), "\n")
 
     console.log("Bubble Compares the next 2 Elements: 92, and 79")
-    console.log("92 > 79, So we DO need to change them. AGAIN\n")
+    console.log("92 > 79, So we DO need to change them.\n")
 
     console.log("Example Array", JSON.stringify([46, 75, 8, 11, 0, 64, "[", 79, 92, "]", 17, 50]), "\n")
 
     console.log("Bubble Compares the next 2 Elements: 92, and 17")
-    console.log("92 > 17, So we DO need to change them. AGAIN\n")
+    console.log("92 > 17, So we DO need to change them.\n")
 
 
     console.log("Example Array", JSON.stringify([46, 75, 8, 11, 0, 64, 79, "[", 17, 92, "]", 50]), "\n")
 
     console.log("Bubble Compares the next 2 Elements: 92, and 50")
-    console.log("92 > 50, So we DO need to change them. AGAIN, Once More\n")
+    console.log("92 > 50, So we DO need to change them.\n")
 
     console.log("You'll notice 92 started in a low position and is BUBBLING UP the positions of the array")
     console.log("Example Array", JSON.stringify([46, 75, "92 Started Here[", 8, "]", 11, 0, 64, 79, 17, 50, "[", 92, "] and makes it to the end",]), "\n\n")
 
-    console.log("Bubble Sort then Starts over and repeats this process until done.")
+    console.log("Bubble Sort then repeats this process until done.")
     console.log("This is slow.\n\n")
 
     console.log("Bubble Sort Code (Swap Included in Package):\n")

@@ -85,7 +85,6 @@ function bubbleSort(ArrayToBeSorted) {
 
     console.log("Your sorted array by position using bubble sort:\n")
     prettyPrintingArray(ArrayToBeSorted)
-
 }
 
 

@@ -248,7 +248,7 @@ function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
     if (left >= right) {
         return;//returns recursively
     }
-    var middle = left + parseInt((right - left) / 2);
+    var middle = ArrayToBeSorted.length / 2;
     mergeSort(ArrayToBeSorted, left, middle);
     mergeSort(ArrayToBeSorted, middle + 1, right);
     merge(ArrayToBeSorted, left, middle, right);

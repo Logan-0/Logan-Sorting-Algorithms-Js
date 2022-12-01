@@ -22,11 +22,8 @@
 
 ### Outputs...
 
-#### This is a lot going through your terminal.
-
 // Used for all sorting methods to show implementation.
 `const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)`
-
 
 
 // Output Bubble Sort

@@ -153,7 +153,7 @@ function selectionSort(ArrayToBeSorted) {
     console.log("This value goes into the first position. 46, and 0 are Swapped.\n\n")
 
     console.log("Selection sort repeatedly scans until left to right we have smallest to largest.\n\n")
-    console.log("This sorting method is quick in many situations\n")
+    console.log("This sorting method is often quick\n")
 
 
     console.log("Selection Sort Code (Swap Included in Package):\n")

@@ -364,8 +364,8 @@ function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
         return;//returns recursively
     }
     var middle = left + parseInt((right - left) / 2);
-    merge(ArrayToBeSorted, left, middle);
-    merge(ArrayToBeSorted, middle + 1, right);
+    mergeSort(ArrayToBeSorted, left, middle);
+    mergeSort(ArrayToBeSorted, middle + 1, right);
     merge(ArrayToBeSorted, left, middle, right);
 
     prettyPrintingArray(ArrayToBeSorted)

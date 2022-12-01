@@ -58,56 +58,6 @@ function bubbleSort(ArrayToBeSorted) {
      */
     console.log("Array Sorting Step-by-Step with Bubble\n")
 
-    console.log("Example Array Original: ", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
-    console.log("Bubble Compares the First 2 Elements: 46, and 75")
-    console.log("46 < 75, So we DON'T need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 75, and 92")
-    console.log("75 < 92, So we DON'T need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 8")
-    console.log("92 > 8, So we DO need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, "[", 8, 92, "]", 11, 0, 64, 79, 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 11")
-    console.log("92 > 11, So we DO need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, 8, "[", 11, 92, "]", 0, 64, 79, 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 0")
-    console.log("92 > 0, So we DO need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, 8, 11, "[", 0, 92, "]", 64, 79, 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 64")
-    console.log("92 > 64, So we DO need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, 8, 11, 0, "[", 64, 92, "]", 79, 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 79")
-    console.log("92 > 79, So we DO need to change them.\n")
-
-    console.log("Example Array", JSON.stringify([46, 75, 8, 11, 0, 64, "[", 79, 92, "]", 17, 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 17")
-    console.log("92 > 17, So we DO need to change them.\n")
-
-
-    console.log("Example Array", JSON.stringify([46, 75, 8, 11, 0, 64, 79, "[", 17, 92, "]", 50]), "\n")
-
-    console.log("Bubble Compares the next 2 Elements: 92, and 50")
-    console.log("92 > 50, So we DO need to change them.\n")
-
-    console.log("You'll notice 92 started in a low position and is BUBBLING UP the positions of the array")
-    console.log("Example Array", JSON.stringify([46, 75, "92 Started Here[", 8, "]", 11, 0, 64, 79, 17, 50, "[", 92, "] and makes it to the end",]), "\n\n")
-
-    console.log("Bubble Sort then repeats this process until done.")
-
     console.log("Bubble Sort Code (Swap Included in Package):\n")
     console.log("function bubblesort(ArrayToBeSorted) {")
     console.log(" for ( let i = 0; i < ArrayToBeSorted.size - 1; i++; )")
@@ -146,15 +96,6 @@ function selectionSort(ArrayToBeSorted) {
          * This First Part Is a Console Printout of the Visual Methodology
          */
     console.log("Array Sorting Step-by-Step with Selection Sort\n")
-
-    console.log("Example Array Original: ", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
-    console.log("We first temporarily hold the first value of the array. 46\n")
-    console.log("Selection Sort next finds the minimum value in the array. 0\n")
-    console.log("This value goes into the first position. 46, and 0 are Swapped.\n\n")
-
-    console.log("Selection sort repeatedly scans until left to right we have smallest to largest.\n")
-    console.log("This sorting method is often quick\n")
-
 
     console.log("Selection Sort Code (Swap Included in Package):\n")
     console.log("function selectionSort(ArrayToBeSorted) {")

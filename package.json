@@ -1,6 +1,6 @@
 {
   "name": "logan-sorting-algorithms-js",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Examples of Various Sorting Algorithms with Drawn Out Explinations",
   "main": "index.js",
   "scripts": {

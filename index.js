@@ -245,9 +245,17 @@ function merge(ArrayToBeSorted, left, middle, right) {
 // Combining the broken down arrays for MergeSort
 function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
 
+    if (left >= right) {
+        return;//returns recursively
+    }
+    var middle = left + parseInt((right - left) / 2);
+    mergeSort(ArrayToBeSorted, left, middle);
+    mergeSort(ArrayToBeSorted, middle + 1, right);
+    merge(ArrayToBeSorted, left, middle, right);
+
     /**
-             * This First Part Is a Console Printout of the Visual Methodology
-             */
+                 * This First Part Is a Console Printout of the Visual Methodology
+                 */
     console.log("Array Sorting Step-by-Step with Merge Sort\n")
 
     console.log("Example Array Original: ", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
@@ -358,17 +366,6 @@ function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
 
     console.log("\n")
     console.log("Your sorted array by position using merge sort:\n")
-
-
-    if (left >= right) {
-        return;//returns recursively
-    }
-    var middle = left + parseInt((right - left) / 2);
-    mergeSort(ArrayToBeSorted, left, middle);
-    mergeSort(ArrayToBeSorted, middle + 1, right);
-    merge(ArrayToBeSorted, left, middle, right);
-
-
 }
 
 

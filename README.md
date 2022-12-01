@@ -19,63 +19,62 @@
 `const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)`
 
 
-// Output Bubble Sort
-```
+
 Array Sorting Step-by-Step with Bubble
 
-Example Array Original:  [46,75,92,8,11,0,64,79,17,50] 
+Example Array Original:  `[46,75,92,8,11,0,64,79,17,50] `
 
 Bubble Compares the First 2 Elements: 46, and 75
 46 < 75, So we DON'T need to change them.
 
-Example Array [46,75,92,8,11,0,64,79,17,50] 
+Example Array `[46,75,92,8,11,0,64,79,17,50] `
 
 Bubble Compares the next 2 Elements: 75, and 92
 75 < 92, So we DON'T need to change them.
 
-Example Array [46,75,92,8,11,0,64,79,17,50] 
+Example Array `[46,75,92,8,11,0,64,79,17,50]`
 
 Bubble Compares the next 2 Elements: 92, and 8
 92 > 8, So we DO need to change them.
 
-Example Array [46,75,"[",8,92,"]",11,0,64,79,17,50] 
+Example Array `[46,75,"[",8,92,"]",11,0,64,79,17,50]`
 
 Bubble Compares the next 2 Elements: 92, and 11
 92 > 11, So we DO need to change them.
 
-Example Array [46,75,8,"[",11,92,"]",0,64,79,17,50] 
+Example Array `[46,75,8,"[",11,92,"]",0,64,79,17,50]`
 
 Bubble Compares the next 2 Elements: 92, and 0
 92 > 0, So we DO need to change them.
 
-Example Array [46,75,8,11,"[",0,92,"]",64,79,17,50] 
+Example Array `[46,75,8,11,"[",0,92,"]",64,79,17,50]`
 
 Bubble Compares the next 2 Elements: 92, and 64
 92 > 64, So we DO need to change them.
 
-Example Array [46,75,8,11,0,"[",64,92,"]",79,17,50] 
+Example Array `[46,75,8,11,0,"[",64,92,"]",79,17,50]`
 
 Bubble Compares the next 2 Elements: 92, and 79
 92 > 79, So we DO need to change them. AGAIN
 
-Example Array [46,75,8,11,0,64,"[",79,92,"]",17,50] 
+Example Array `[46,75,8,11,0,64,"[",79,92,"]",17,50]`
 
 Bubble Compares the next 2 Elements: 92, and 17
 92 > 17, So we DO need to change them. AGAIN
 
-Example Array [46,75,8,11,0,64,79,"[",17,92,"]",50] 
+Example Array `[46,75,8,11,0,64,79,"[",17,92,"]",50]`
 
 Bubble Compares the next 2 Elements: 92, and 50
 92 > 50, So we DO need to change them. AGAIN, Once More
 
 You'll notice 92 started in a low position and is BUBBLING UP the positions of the array
-Example Array [46,75,"92 Started Here[",8,"]",11,0,64,79,17,50,"[",92,"] and makes it to the end"] 
+Example Array `[46,75,`"92 Started Here`[",8,"]",11,0,64,79,17,50,"[",92,"]]` and makes it to the end"
 
 
 Bubble Sort then Starts over and repeats this process until done.
-This is slow. DO NOT USE, TOO SLOW, Bubble Sort just makes a point not progress!
 
-
+// Output Bubble Sort
+```
 Bubble Sort Code (Swap Included in Package):
 
 function bubblesort(ArrayToBeSorted) {
@@ -116,11 +115,10 @@ Element Position: 9, Element Value: 92
 ```
 
 
-// Output Selection Sort
-```
+
 Array Sorting Step-by-Step with Selection Sort
 
-Example Array Original:  [46,75,92,8,11,0,64,79,17,50] 
+Example Array Original:  `[46,75,92,8,11,0,64,79,17,50]`
 
 We first temporarily hold the first value of the array. 46
 
@@ -133,6 +131,9 @@ Selection sort then repeatedly scans over and over until left to right we have s
 
 
 This sorting method is quick in many situations
+
+// Output Selection Sort
+```
 
 Selection Sort Code (Swap Included in Package):
 

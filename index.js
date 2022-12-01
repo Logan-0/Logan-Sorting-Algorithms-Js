@@ -70,13 +70,13 @@ function merge(ArrayToBeSorted, left, middle, right) {
     }
 }
 
-function mergeSort(ArrayToBeSorted, left, right) {
+function combine(ArrayToBeSorted, left, right) {
     if (left >= right) {
         return;//returns recursively
     }
     var middle = left + parseInt((right - left) / 2);
-    mergeSort(ArrayToBeSorted, left, middle);
-    mergeSort(ArrayToBeSorted, middle + 1, right);
+    combine(ArrayToBeSorted, left, middle);
+    combine(ArrayToBeSorted, middle + 1, right);
     merge(ArrayToBeSorted, left, middle, right);
     return ArrayToBeSorted
 }
@@ -108,7 +108,7 @@ function prettyPrintingArray(ArrayToBePrinted) {
  * Just don't unless you must come up with algorithm on the spot
  */
 
-function bubbleSortExample(ArrayToBeSorted) {
+function bubbleSort(ArrayToBeSorted) {
 
     /**
      * This First Part Is a Console Printout of the Visual Methodology
@@ -199,7 +199,7 @@ function bubbleSortExample(ArrayToBeSorted) {
 }
 
 
-function selectionSortExample(ArrayToBeSorted) {
+function selectionSort(ArrayToBeSorted) {
 
 
     /**
@@ -262,7 +262,7 @@ function selectionSortExample(ArrayToBeSorted) {
 
 
 
-function mergeSortExample(ArrayToBeSorted) {
+function mergeSort(ArrayToBeSorted) {
 
     /**
          * This First Part Is a Console Printout of the Visual Methodology
@@ -386,4 +386,4 @@ function mergeSortExample(ArrayToBeSorted) {
 
 
 
-module.exports = { prettyPrintingArray, swap, bubbleSortExample, selectionSortExample, mergeSortExample, mergeSort, merge }
+module.exports = { prettyPrintingArray, swap, bubbleSort, selectionSort, mergeSort, merge, combine }

@@ -366,6 +366,7 @@ function mergeSort(ArrayToBeSorted, left = 0, right = ArrayToBeSorted.length) {
 
     console.log("\n")
     console.log("Your sorted array by position using merge sort:\n")
+    prettyPrintingArray(ArrayToBeSorted)
 }
 
 

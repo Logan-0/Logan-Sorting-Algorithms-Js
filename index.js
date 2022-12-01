@@ -152,7 +152,7 @@ function selectionSort(ArrayToBeSorted) {
     console.log("Selection Sort next finds the minimum value in the array. 0\n")
     console.log("This value goes into the first position. 46, and 0 are Swapped.\n\n")
 
-    console.log("Selection sort then repeatedly scans over and over until left to right we have smallest to largest respectively.\n\n")
+    console.log("Selection sort repeatedly scans until left to right we have smallest to largest.\n\n")
     console.log("This sorting method is quick in many situations\n")
 
 

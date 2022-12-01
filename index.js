@@ -184,6 +184,9 @@ function bubbleSort(ArrayToBeSorted) {
 
 
     for (let i = 0; i < ArrayToBeSorted.length; i++) {
+
+        console.log(i);
+
         for (let j = 0; j < ArrayToBeSorted.length - i - 1; j++) {
             if (ArrayToBeSorted[j] > ArrayToBeSorted[j + 1]) {
                 swap(ArrayToBeSorted, j, j + 1)

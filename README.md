@@ -13,12 +13,10 @@
 - Selection Sort is in place so even if it isn't the fastest for something large, it has simple space requirements.
 - Recommended for general use.
 
-### Outputs...
-
-// Used for all sorting methods to show implementation.
+### Example Input
 `const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)`
 
-### Process
+### Process Bubble Sort
 
 Array Sorting Step-by-Step with Bubble
 
@@ -67,9 +65,7 @@ Example Array `[46,75,8,11,0,64,79,"[",17,92,"]",50]`
 Bubble Compares the next 2 Elements: 92, and 50
 92 > 50, So we DO need to change them. AGAIN, Once More
 
-You'll notice 92 started in a low position and is BUBBLING UP the positions of the array
-Example Array `[46,75,`"92 Started Here`[",8,"]",11,0,64,79,17,50,"[",92,"]]` and makes it to the end"
-
+You'll notice 92 started in a low position and is BUBBLING UP the positions of the array to the end
 
 Bubble Sort then Starts over and repeats this process until done.
 
@@ -114,7 +110,7 @@ Element Position: 8, Element Value: 79
 Element Position: 9, Element Value: 92 
 ```
 
-### Process
+### Process Selection Sort
 
 Array Sorting Step-by-Step with Selection Sort
 

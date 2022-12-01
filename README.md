@@ -1,37 +1,28 @@
-# The logan-sorting-alogrithms-js Package contains methods for sorting number arrays using (Bubble, Selection, Merge).
+# Sorting Algorithms with Explinations of Bubble, Merge, and Selection - By Logan.
 
-### But Not Just Sorting. This Package is a fully explained sorting method.
-
-### This is useful for teaching and/or remembering how each method works.
-
-### It does sort your specific number array, but also provides examples of both code, and concept.
-
-### Let's get started.
+### This package is a sorts while explaining how the sort algorithm works.
 
 #### 1. bubbleSortExample(ArrayToBeSorted)
-- Takes one argument, your number array, sorts it, slowly
-- Bubble Sort is never recommended, but very easy to implement
+- Takes one argument of number array
+- Bubble Sort is easy to implement
 - Legend has it network television used this for sorting programming. Think of it as that level of speed.
 - Numbers Bubble Up. Largest numbers slowly migrate up the array indices.
 
 #### 2. selectionSortExample(ArrayToBeSorted)
-- Takes one argument, your number array, sorts it.
+- Takes one argument of number array.
 - Selection Sort is in place so even if it isn't the fastest for something large, it has simple space requirements.
-- Recommended for general use by myself, idk maybe someone better than I recommends it too.
-- For if you don't want to remember Quick Sort
-- Almost an inverse of Bubble Sort it uses the minimum values to sort.
+- Recommended for general use.
 
 #### 3. mergeSort(ArrayToBeSorted)
-- Takes one argument, yournumber array, sorts it, at decent speed.
-- This is used commonplace when data is large enough loading data is an issue.
-- This sort tends to be used externally, i.e. not-in-place
+- Takes one argument of number array.
+- Used externally when data set is to large for in-place sorting.
 - We follow the divide and conquer principle.
 - Sorting is easier one at a time, from the ground up.
-- Small arrays may be slower than necessary
+- Small arrays may be slower.
 
 ### Outputs...
 
-#### This is a lot going through your terminal. Stretch it like a 8.5x11 word doc and enjoy.
+#### This is a lot going through your terminal.
 
 // Used for all sorting methods to show implementation.
 `const sandboxArray = new Array(46, 75, 92, 8, 11, 0, 64, 79, 17, 50)`

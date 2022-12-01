@@ -1,22 +1,16 @@
 /**
  * The SWAP function
  * 
- * Starting Values, TEMP = Null, 1 = *1, 2 = *2
+ * Starting Values, 
+ * TEMP = Null,
+ * 1 = *1,
+ * 2 = *2
  * 
- * 
- * The idea is we make a TEMP, and put first element in it
- * TEMP = *1, then 
- * we put the second element in the first location
- * 1 = *2, then 
- * we can thank TEMP and use the value it held
- * 2 = *TEMP
+ * We swap elements using a temp variable
  * 
  * 
  * 3 Arguments - The Array, The first element, and the second element
- * You need 3 arguments instead of just two for a implied placeholder
  * 
- * Otherwise the code gets NOT LONG, BUT UGLY ENOUGH YOU WISH IT WERE LONGER
- * Use This Way
  * 
  */
 function swap(ArrayNeedingElementsSwapped, firstPosition, secondPosition) {
@@ -111,7 +105,7 @@ function prettyPrintingArray(ArrayToBePrinted) {
  * Level 1 Algorithm
  * 
  * Best Case is for Teaching
- * Just don't unless you must
+ * Just don't unless you must come up with algorithm on the spot
  */
 
 function bubbleSortExample(ArrayToBeSorted) {
@@ -170,7 +164,7 @@ function bubbleSortExample(ArrayToBeSorted) {
     console.log("Example Array", JSON.stringify([46, 75, "92 Started Here[", 8, "]", 11, 0, 64, 79, 17, 50, "[", 92, "] and makes it to the end",]), "\n\n")
 
     console.log("Bubble Sort then Starts over and repeats this process until done.")
-    console.log("This is slow. DO NOT USE, TOO SLOW, Bubble Sort just makes a point not progress!\n\n")
+    console.log("This is slow.\n\n")
 
     console.log("Bubble Sort Code (Swap Included in Package):\n")
     console.log("function bubblesort(ArrayToBeSorted) {")
@@ -278,56 +272,50 @@ function mergeSortExample(ArrayToBeSorted) {
     console.log("Example Array Original: ", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
     console.log("Merge Sort is Divide and Conquer\n")
     console.log("First we split our original array into two seperate arrays.\n")
-    console.log("We find the length of the array (-1) due to arrays starting at 0 and divide by two. This is our midpoint.\n\n")
+    console.log("We find the length of the array -1. This is our midpoint.\n\n")
 
     console.log("This array has 10 elements (-1). Because this is an array we will take 9 and divide it in half\n")
     console.log("Midpoint is 4.5, in this case of halfway from 4 to 5, we can choose which side of the midpoint we want to divide the array on.\n")
-    console.log("In this example we will choose the left side to slice the array.\n\n")
+    console.log("We will choose the left side to use.\n\n")
 
     console.log("Example Array Left Side: ", JSON.stringify([46, 75, 92, 8, 11]), " and Example Array Right Side", JSON.stringify([0, 64, 79, 17, 50]), "\n")
 
-    console.log("Now in coding Merge Sort we have to do a check before each time we divide the array up.\n")
     console.log("We check that the index of the beginning of the array is less than the end.\n")
-    console.log("The reason this is done is because once the array is divided enough, the array length at some point will be 1.\n")
+    console.log("Once the array is divided enough, the array length will be 1.\n")
     console.log("The left is not less than the right with a single element.\n\n")
 
-    console.log("Once we get down to having many arrays of 1 element each we rebuild our array. Sorted.\n")
-    console.log("Below is the array divide in half until we have 10 individual, 1 element arrays.")
+    console.log("Once we get down to having arrays of 1 element we rebuild our array. Sorted.\n")
+    console.log("Below is the array divide in half until we have 1 element arrays.")
 
-    console.log("Example Array 1 (Left Side split, this is the left) ", JSON.stringify([46, 75]), " Example Array 2 (Left side split, this is the right) ", JSON.stringify([92, 8, 11]))
-    console.log("Example Array 3 (Right side split, this is the left) ", JSON.stringify([0, 64]), " Example Array 4 (Right side split, this is the right) ", JSON.stringify([79, 17, 50]))
+    console.log("Example Array 1 ", JSON.stringify([46, 75]), " Example Array 2 ", JSON.stringify([92, 8, 11]))
+    console.log("Example Array 3 ", JSON.stringify([0, 64]), " Example Array 4 ", JSON.stringify([79, 17, 50]))
 
-    console.log("Our Steps So Far: ")
+    console.log("Array So Far: ")
     console.log(JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]))
     console.log("1. ", JSON.stringify([46, 75, 92, 8, 11]), " and 2. ", JSON.stringify([0, 64, 79, 17, 50]))
     console.log("1. ", JSON.stringify([46, 75]), " 2. ", JSON.stringify([92, 8, 11]), " 3. ", JSON.stringify([0, 64]), " 4. ", JSON.stringify([79, 17, 50]))
 
-    console.log("Process Continues...")
+    console.log("Process Repeats...")
     console.log("1. ", JSON.stringify([46]), " 2. ", JSON.stringify([75]), " 3. ", JSON.stringify([92]), " 4. ", JSON.stringify([8, 11]), " 5. ", JSON.stringify([0]), " 6. ", JSON.stringify([64]), " 7. ", JSON.stringify([79]), " 8. ", JSON.stringify([17, 50]), "\n")
-    console.log("We can't split Array 1 down any further, this is that check to make sure the first element is less than the last element.\n")
-    console.log("We continue to split what we can and the final splits have the arrays as follows.\n\n")
+    console.log("We continue to split .\n\n")
 
     console.log("Arrays 1-10:\n")
     console.log(JSON.stringify([46]), " ", JSON.stringify([75]), " ", JSON.stringify([92]), " ", JSON.stringify([8]), " ", JSON.stringify([11]), " ", JSON.stringify([0]), " ", JSON.stringify([64]), " ", JSON.stringify([79]), " ", JSON.stringify([17]), " ", JSON.stringify([50]), "\n\n")
 
 
-    console.log("We will then compare and bring the array back together.\n")
     console.log("1 and 2 compare elements and we make new array 11 ", JSON.stringify([46, 75]), "\n")
     console.log("3 and 4 compare elements and we make new array 12 ", JSON.stringify([8, 92]), "\n")
     console.log("5 and 6 compare elements and we make new array 13 ", JSON.stringify([0, 11]), "\n")
     console.log("7 and 8 compare elements and we make new array 14 ", JSON.stringify([64, 79]), "\n")
     console.log("9 and 10 compare elements and we make new array 15 ", JSON.stringify([17, 50]), "\n\n")
-    console.log("Visualizing them in a line shows we are more correctly sorted than we started but there is more to do.\n\n")
 
     console.log("Example Array Original: ", JSON.stringify([46, 75, 92, 8, 11, 0, 64, 79, 17, 50]), "\n")
     console.log("Halfway Complete in order 11,12,13,14,15: ", JSON.stringify([46, 75]), JSON.stringify([8, 92]), JSON.stringify([0, 11]), JSON.stringify([64, 79]), JSON.stringify([17, 50]), "\n\n")
 
-    console.log("Merge Again While Sorting: \n")
     console.log("11 and 12 compare elements and we make new array 16 ", JSON.stringify([8, 46, 75, 92]), "\n")
     console.log("13 and 14 compare elements and we make new array 17 ", JSON.stringify([0, 11, 64, 79]), "\n")
     console.log("We will merge 15 with 17 for array 18: ", JSON.stringify([0, 11, 17, 50, 64, 79]), "\n\n")
 
-    console.log("Visualizing 3/4ths Sorted: \n")
     console.log("3/4th Complete in order 16,18 ", JSON.stringify([8, 46, 75, 92]), JSON.stringify([0, 11, 17, 50, 64, 79]), "\n")
     console.log("16, and 17 make new array 19: ", JSON.stringify([0, 8, 11, 46, 64, 75, 79, 92]), "\n")
     console.log("Finally we add in the finall array of 18 and our final array, array 20, is complete and sorted.\n\n")

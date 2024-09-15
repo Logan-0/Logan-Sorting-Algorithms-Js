@@ -1,12 +1,3 @@
-/**
-* 
-* Logan's Simple Array Sorter
-* Date Started: 08/12/22
-* Date Last Updated: 09/15/24
-* Last Updated By: Logan-0
-* 
-*/
-
 # Sorting Algorithms with Explinations of Bubble, and Selection - By Logan.
 
 #### 1. bubbleSortExample(ArrayToBeSorted)

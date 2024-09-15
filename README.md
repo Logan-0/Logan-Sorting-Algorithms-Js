@@ -1,4 +1,4 @@
-# The logan-sorting-alogrithms-js Package contains methods for sorting number arrays using (Bubble, Selection, Merge).
+# Sorting Algorithms with Explinations of Bubble, and Selection - By Logan.
 
 #### 1. bubbleSortExample(ArrayToBeSorted)
 - Takes one argument, your number array, sorts it, slowly
@@ -6,12 +6,10 @@
 - Legend has it network television used this for sorting programming. Think of it as that level of speed.
 - Numbers Bubble Up. Largest numbers slowly migrate up the array indices.
 
-#### 2. selectionSortExample(ArrayToBeSorted)
-- Takes one argument, your number array, sorts it.
+#### 2. selectionSort(ArrayToBeSorted)
+- Takes one argument of number array.
 - Selection Sort is in place so even if it isn't the fastest for something large, it has simple space requirements.
-- Recommended for general use by myself, idk maybe someone better than I recommends it too.
-- For if you don't want to remember Quick Sort
-- Almost an inverse of Bubble Sort it uses the minimum values to sort.
+- Recommended for general use.
 
 #### 3. mergeSort(ArrayToBeSorted)
 - Takes one argument, yournumber array, sorts it, at decent speed.
